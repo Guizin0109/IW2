@@ -81,10 +81,21 @@
             }
 
         }
-        function MarcarCartela(td){
-            td.style.backgroundColor = 'black';
-            td.style.color = "white";
+        function MarcarCartela(td)
+        {
+           if(td.style.backgroundColor != 'black')
+           {
+                td.style.backgroundColor = 'black';
+                td.style.color = "white";
+           }
+           else
+           {
+               td.style.backgroundColor = '';
+               td.style.color = "black";
+
+           }
         }
+          
     </script>
 </body>
 </html>
